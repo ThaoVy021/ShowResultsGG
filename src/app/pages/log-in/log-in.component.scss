@@ -1,0 +1,29 @@
+.login-form {
+    max-width: 430px;
+    
+    .fixResponsive {
+      @media (max-width: 576px) {
+       display: block !important;
+       
+      }  
+
+      nz-form-label {
+        @media (max-width: 576px) {
+          width: 100%;
+         }  
+      }
+
+      input {
+        @media (max-width: 576px) {
+          width: 100%;
+         } 
+      }
+    }
+
+    .login-form-button { 
+      margin-bottom: 16px;
+      width: 100px;
+    } 
+  }
+
+  
