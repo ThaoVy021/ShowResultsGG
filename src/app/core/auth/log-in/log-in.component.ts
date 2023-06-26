@@ -40,6 +40,6 @@ export class LogInComponent implements OnInit {
   }
 
   public toFromRegister(): void {
-    this.router.navigateByUrl("/show-infor/register");
+    this.router.navigateByUrl("/login/register");
   }
 }

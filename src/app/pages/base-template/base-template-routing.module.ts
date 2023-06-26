@@ -1,6 +1,6 @@
 import { NgModule } from "@angular/core";
 import { RouterModule, Routes } from "@angular/router";
-import { RegisterComponent } from "../register/register.component";
+import { FindKeywordsComponent } from "../find-keywords/find-keywords.component";
 import { BaseTemplateComponent } from "./base-template.component";
 
 const routes: Routes = [
@@ -10,10 +10,10 @@ const routes: Routes = [
     children: [
       {
         path: "",
-        redirectTo: "register",
+        redirectTo: "find-keywords",
         pathMatch: "full",
       },
-      { path: "register", component: RegisterComponent },
+      { path: "find-keywords", component: FindKeywordsComponent },
       // {
       //   path: "register",
       //   loadChildren: () =>

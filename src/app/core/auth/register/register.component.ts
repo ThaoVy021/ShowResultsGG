@@ -42,6 +42,6 @@ export class RegisterComponent {
   }
 
   public toLogin(): void {
-    this.router.navigateByUrl("/login");
+    this.router.navigateByUrl("/login/login");
   }
 }
