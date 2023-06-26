@@ -5,11 +5,11 @@ import { NgZorroAntdModule } from "./ng-zorro-antd.module";
 
 import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
-import { PagesComponent } from "./pages/pages.component";
-import { LogInComponent } from "./pages/log-in/log-in.component";
+import { AuthComponent } from "./core/auth/auth.component";
+import { BaseTemplateComponent } from "./pages/base-template/base-template.component";
 
 @NgModule({
-  declarations: [AppComponent, PagesComponent, LogInComponent],
+  declarations: [AppComponent, BaseTemplateComponent, AuthComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

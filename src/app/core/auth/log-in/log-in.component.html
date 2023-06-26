@@ -1,0 +1,49 @@
+<section>
+  <h1 class="title">Log In</h1>
+  <form
+    nz-form
+    [formGroup]="validateForm"
+    class="login-form block m-auto text-center p-16"
+    (ngSubmit)="submitForm()"
+  >
+    <nz-form-item>
+      <nz-form-label [nzSm]="6">Username</nz-form-label>
+      <nz-form-control [nzSm]="14" nzErrorTip="Please input your username!">
+        <nz-input-group
+          nzPrefixIcon="user"
+          class="flex justify-around fixResponsive"
+        >
+          <input
+            type="text"
+            nz-input
+            formControlName="userName"
+            placeholder="Username"
+          />
+        </nz-input-group>
+      </nz-form-control>
+    </nz-form-item>
+
+    <nz-form-item>
+      <nz-form-label [nzSm]="6">Password</nz-form-label>
+      <nz-form-control [nzSm]="14" nzErrorTip="Please input your Password!">
+        <nz-input-group
+          nzPrefixIcon="lock"
+          class="flex justify-around fixResponsive"
+        >
+          <input
+            type="password"
+            nz-input
+            formControlName="password"
+            placeholder="Password"
+          />
+        </nz-input-group>
+      </nz-form-control>
+    </nz-form-item>
+
+    <button nz-button class="login-form-button" nzType="primary">Log in</button>
+    <div>
+      Do not have an account?
+      <a (click)="toFromRegister()">register now!</a>
+    </div>
+  </form>
+</section>

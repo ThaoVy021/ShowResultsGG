@@ -1,0 +1,29 @@
+@import "../../app.component.scss";
+
+section {
+  .title {
+    color: $primaryColor;
+    font-size: 48px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 24px;
+  }
+
+  [nz-form] {
+    max-width: 600px;
+    @media (max-width: 576px) {
+      display: block !important;
+    }
+
+    input {
+      @media (max-width: 576px) {
+        width: 100%;
+      }
+    }
+
+    .register-area {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
