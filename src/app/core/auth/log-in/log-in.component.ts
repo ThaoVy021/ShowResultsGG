@@ -4,13 +4,13 @@ import {
   UntypedFormGroup,
   Validators,
 } from "@angular/forms";
+import { Router } from "@angular/router";
 
 @Component({
   selector: "app-log-in",
   templateUrl: "./log-in.component.html",
   styleUrls: ["./log-in.component.scss"],
 })
-@Injectable()
 export class LogInComponent implements OnInit {
   validateForm!: UntypedFormGroup;
 
@@ -27,12 +27,19 @@ export class LogInComponent implements OnInit {
     }
   }
 
-  constructor(private fb: UntypedFormBuilder) {}
+  constructor(
+    private fb: UntypedFormBuilder,
+    private readonly router: Router
+  ) {}
 
   ngOnInit(): void {
     this.validateForm = this.fb.group({
       userName: [null, [Validators.required]],
       password: [null, [Validators.required]],
     });
+  }
+
+  public toFromRegister(): void {
+    this.router.navigateByUrl("/show-infor/register");
   }
 }

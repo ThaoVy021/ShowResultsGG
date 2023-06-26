@@ -1,0 +1,44 @@
+@import "../../../app.component.scss";
+
+section {
+  .title {
+    color: $primaryColor;
+    font-size: 48px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 24px;
+  }
+
+  .login-form {
+    max-width: 600px;
+
+    .fixResponsive {
+      @media (max-width: 576px) {
+        display: block !important;
+      }
+
+      nz-form-label {
+        @media (max-width: 576px) {
+          width: 100%;
+        }
+      }
+
+      input {
+        @media (max-width: 576px) {
+          width: 100%;
+        }
+      }
+    }
+
+    .login-form-button {
+      margin-bottom: 16px;
+      width: 100px;
+    }
+
+    input {
+      @media (max-width: 576px) {
+        width: 100%;
+      }
+    }
+  }
+}
