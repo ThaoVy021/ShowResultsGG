@@ -1,0 +1,20 @@
+section {
+  .helloUser {
+    display: flex;
+    justify-content: end;
+    padding: 24px 0;
+  }
+
+  .inputSearch {
+    margin-bottom: 24px;
+  }
+
+  .showResults {
+    nz-card {
+      width: 100%;
+      p {
+        margin: 0;
+      }
+    }
+  }
+}

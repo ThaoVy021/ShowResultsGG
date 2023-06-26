@@ -1,0 +1,24 @@
+<section class="container m-auto p-8">
+  <div class="helloUser">
+    <span>Hello, <strong>User</strong></span>
+  </div>
+
+  <div class="inputSearch">
+    <nz-input-group nzSearch [nzAddOnAfter]="suffixIconButton">
+      <input type="text" nz-input placeholder="let's find keywords" />
+    </nz-input-group>
+    <ng-template #suffixIconButton>
+      <button nz-button nzType="primary" nzSearch>
+        <span nz-icon nzType="search"></span>
+      </button>
+    </ng-template>
+  </div>
+
+  <div class="showResults">
+    <nz-card nzTitle="Results">
+      <p>Card content</p>
+      <p>Card content</p>
+      <p>Card content</p>
+    </nz-card>
+  </div>
+</section>
